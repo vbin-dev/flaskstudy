@@ -1,0 +1,9 @@
+{% for mesg in get_flashed_messages() %}
+{{ mesg }}
+{% endfor %}
+<form action="/login" method="POST">
+    {{ form.csrf_token }}
+    {{ form.username.label }}{{ form.username }}<br/>
+    {{ form.password.label }}{{ form.password }}<br/>
+    {{ form.submit }}
+</form>

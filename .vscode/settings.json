@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "app/bin/python",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_flask_sqlalchemy"
+    ],
+}
